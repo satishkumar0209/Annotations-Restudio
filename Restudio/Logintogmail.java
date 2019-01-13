@@ -23,13 +23,13 @@ public class Logintogmail {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
 
-		driver.findElement(By.id("identifierId")).sendKeys("shruthiyttesting@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("yttesting123");
+		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 		
