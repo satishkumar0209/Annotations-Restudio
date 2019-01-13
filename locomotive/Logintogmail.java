@@ -18,7 +18,7 @@ public class Logintogmail {
 		driver.findElement(By.xpath("//*[text()='Sign in']")).click();
 		Thread.sleep(2000);
 
-		driver.findElement(By.id("identifierId")).sendKeys("peloteando2@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 
@@ -26,7 +26,7 @@ public class Logintogmail {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("peloteando");
+		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 
