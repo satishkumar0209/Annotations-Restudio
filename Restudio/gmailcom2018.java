@@ -23,13 +23,13 @@ public class gmailcom2018 {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
 
-		driver.findElement(By.id("identifierId")).sendKeys("studio.2018.2018.2018@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("@#(*&jdshdkjs1302SLKSJLKS@#(*&jdshdkjs1302SLKSJLKS");
+		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 		
