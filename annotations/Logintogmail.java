@@ -26,13 +26,13 @@ public class Logintogmail {
 			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@placeholder='Email or phone']")));
 
-			driver.findElement(By.xpath("//*[@placeholder='Email or phone']")).sendKeys("mkelly.torso@gmail.com");
+			driver.findElement(By.xpath("//*[@placeholder='Email or phone']")).sendKeys("");
 
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@placeholder='Password']")));
 			
 			driver.findElement(By.xpath("//*[@placeholder='Password']")).click();
 
-			driver.findElement(By.id("Passwd")).sendKeys("bent1box");
+			driver.findElement(By.id("Passwd")).sendKeys(");
 
 			driver.findElement(By.id("signIn")).click();
 		}
