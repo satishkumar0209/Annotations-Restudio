@@ -50,7 +50,7 @@ public class Logintogmail {
 			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
 
-			driver.findElement(By.id("identifierId")).sendKeys("mkelly.torso@gmail.com");
+			driver.findElement(By.id("identifierId")).sendKeys(".@.com");
 			
 			wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@class='CwaK9']")));
 
@@ -59,7 +59,7 @@ public class Logintogmail {
 			wait.until(
 					ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-			driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("bent1box");
+			driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("");
 
 			driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 			
