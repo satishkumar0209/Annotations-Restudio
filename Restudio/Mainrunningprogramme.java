@@ -28,55 +28,107 @@ public class Mainrunningprogramme {
 
 		WebDriverWait wait = new WebDriverWait(driver, 60);
 
-		// driver.get("https://www.youtube.com");
+		 driver.get("https://www.youtube.com");
 
-		gmailcom2018 login = new gmailcom2018();
+		shruthiyttesting login = new shruthiyttesting();
 		login.gmail(driver);
 
-		Thread.sleep(2000);
+		//======================================================================================
+		//Testcase24
+		
+		String Dashboard="";
+		
+		
+		String Videolist="";
+		
+		String Comments="";
+		
+		String Channelanalyst="";
+		
 		driver.get(
 				"https://studio.youtube.com/channel/UCMjBz-CTBTBc5LJXaXXi9Bw?apiary=release-youtubei.sandbox.googleapis.com");
 		
-		Testcase64Reference check = new Testcase64Reference();
-		check.Testcase(driver);
+		driver.get("");
+		
+		Thread.sleep(3000);
+		
+		driver.get("");
+		
+		Thread.sleep(3000);
+		
+		driver.get("");
+		
+		Thread.sleep(3000);
+		
+		driver.get("");
+		
+		//===========================================================================================
 		
 		
 		
 		
 		
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("(//*[@class='style-scope ytcp-paper-checkbox'])[1]")));
-			WebElement element=driver.findElement(By.xpath("//*[@class='style-scope ytcp-dropdown-trigger x-scope iron-icon-0']"));
-		JavascriptExecutor je = (JavascriptExecutor) driver;
-			
-		je.executeScript("arguments[0].scrollIntoView(true);",element);
-		 driver.findElement(By.xpath("//*[@class='style-scope ytcp-dropdown-trigger x-scope iron-icon-0']")).click();
-		 
-		 driver.findElement(By.xpath("//*[@test-id='10']")).click();
-		 
-		 driver.findElement(By.id("navigate-after")).click();
-		 
-		 WebElement Videotitle=driver.findElement(By.xpath("(//*[@class='remove-default-style  style-scope ytcp-video-list-cell-video'])[1]"));
 		
-		 
 		
-		 System.out.println(Videotitle);
-		 
-		 //String s=Videotitle;
-		 
-		 WebElement dots = driver.findElement(By.xpath("(//*[@class='remove-defaults style-scope ytcp-icon-button x-scope iron-icon-0'])[9]"));
-			Actions action1 = new Actions(driver);
-			action1.moveToElement(dots).click().build().perform();
 		
-			driver.findElement(By.xpath("//*[text()='Delete']")).click();
-			
-			wait.until(ExpectedConditions
-					.visibilityOfElementLocated(By.xpath("//*[@class='label style-scope ytcp-checkbox']")));
-			
-			driver.findElement(By.xpath("//*[@class='label style-scope ytcp-checkbox']")).click();
-			
-			driver.findElement(By.xpath("//*[text()='Delete Video']")).click();
-			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+//		Thread.sleep(2000);
+//		driver.get(
+//				"https://studio.youtube.com/channel/UCMjBz-CTBTBc5LJXaXXi9Bw?apiary=release-youtubei.sandbox.googleapis.com");
+//		
+//		Testcase64Reference check = new Testcase64Reference();
+//		check.Testcase(driver);
+//		
+//		
+//		
+//		
+//		
+//			wait.until(ExpectedConditions
+//					.visibilityOfElementLocated(By.xpath("(//*[@class='style-scope ytcp-paper-checkbox'])[1]")));
+//			WebElement element=driver.findElement(By.xpath("//*[@class='style-scope ytcp-dropdown-trigger x-scope iron-icon-0']"));
+//		JavascriptExecutor je = (JavascriptExecutor) driver;
+//			
+//		je.executeScript("arguments[0].scrollIntoView(true);",element);
+//		 driver.findElement(By.xpath("//*[@class='style-scope ytcp-dropdown-trigger x-scope iron-icon-0']")).click();
+//		 
+//		 driver.findElement(By.xpath("//*[@test-id='10']")).click();
+//		 
+//		 driver.findElement(By.id("navigate-after")).click();
+//		 
+//		 WebElement Videotitle=driver.findElement(By.xpath("(//*[@class='remove-default-style  style-scope ytcp-video-list-cell-video'])[1]"));
+//		
+//		 
+//		
+//		 System.out.println(Videotitle);
+//		 
+//		 //String s=Videotitle;
+//		 
+//		 WebElement dots = driver.findElement(By.xpath("(//*[@class='remove-defaults style-scope ytcp-icon-button x-scope iron-icon-0'])[9]"));
+//			Actions action1 = new Actions(driver);
+//			action1.moveToElement(dots).click().build().perform();
+//		
+//			driver.findElement(By.xpath("//*[text()='Delete']")).click();
+//			
+//			wait.until(ExpectedConditions
+//					.visibilityOfElementLocated(By.xpath("//*[@class='label style-scope ytcp-checkbox']")));
+//			
+//			driver.findElement(By.xpath("//*[@class='label style-scope ytcp-checkbox']")).click();
+//			
+//			driver.findElement(By.xpath("//*[text()='Delete Video']")).click();
+//			
 			//driver.findElement(By.xpath("//*[@placeholder='Search across your channel']")).sendKeys(Videotitle);
 			
 			

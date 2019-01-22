@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Logintogmail {
+public class Studio2019testcase15 {
 
 	public void gmail(WebDriver driver) throws InterruptedException {
 
@@ -23,13 +23,13 @@ public class Logintogmail {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("identifierId")));
 
-		driver.findElement(By.id("identifierId")).sendKeys("shruthiyttesting@gmail.com");
+		driver.findElement(By.id("identifierId")).sendKeys("");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("yttesting123");
+		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("S");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 		

@@ -10,10 +10,7 @@ public class Testcase64Reference {
 		
 		
 		
-		WebElement videotab=Testcase64.Video(driver);
-		Helpher.highLightElement(driver, videotab);
-		videotab.click();
-				
+			
 		
 	}
 

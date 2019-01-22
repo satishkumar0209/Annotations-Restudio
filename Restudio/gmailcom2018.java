@@ -29,7 +29,7 @@ public class gmailcom2018 {
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@aria-label='Enter your password']")));
 
-		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("");
+		driver.findElement(By.xpath("//*[@aria-label='Enter your password']")).sendKeys("S");
 
 		driver.findElement(By.xpath("//*[@class='CwaK9']")).click();
 		
